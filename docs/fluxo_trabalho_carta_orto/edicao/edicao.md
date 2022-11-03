@@ -27,10 +27,47 @@ O gerente do projeto deve definir se a edição será realizada de forma automá
 
 ## Classes EDGV 3.0 Orto
 
-* **edicao_texto_generico_p**: Classe utilizada para inserir textos de forma manual. Possui diversos atributos que permitem modificar as configurações de rótulo. textos de forma manual. Possui diversos atributos que permitem modificar as configurações de rótulo.
-* **edicao_identificador_trecho_rod_p**: Classe auxiliar utilizada para representar o identificador de trecho rodoviário para rodovias federais e estaduais.
-* **edicao_simb_torre_energia_p**: Classe auxiliar utilizada para representar os simbolos de torre de energia em uma linha de energia.
-* **edicao_simb_cota_mestra_l**: Utilizado para posicionar manualmente os textos de cota mestra da curva de nível caso necessário.
+Classe | Observação
+| ------ | ------ |
+edicao_texto_generico_p | Classe utilizada para inserir textos de forma manual. Possui diversos atributos que permitem modificar as configurações de rótulo. Apresentado na carta principal ou na carta mini conforme o atributo *carta_simbolizacao*
+edicao_texto_generico_l | Classe utilizada para inserir textos de forma manual. Possui diversos atributos que permitem modificar as configurações de rótulo. Apresentado na carta principal ou na carta mini conforme o atributo *carta_simbolizacao*
+constr_extracao_mineral_p | Não é apresentada na mini carta.
+constr_extracao_mineral_a | Não é apresentada na mini carta
+edicao_identificador_trecho_rod_p | Classe auxiliar utilizada para representar o identificador de trecho rodoviário para rodovias federais e estaduais. Apresentado na carta principal ou na carta mini conforme o aributo *carta_simbolizacao*
+edicao_simb_torre_energia_p | Classe auxiliar utilizada para representar os simbolos de torre de energia em uma linha de energia. Não é apresentada na mini carta
+elemnat_elemento_hidrografico_p | Não é apresentada na mini carta
+elemnat_elemento_hidrografico_l | Não é apresentada na mini carta
+elemnat_elemento_hidrografico_a | Não é apresentada na mini carta
+elemnat_toponimo_fisiografico_natural_p | Rótulo é apresentado no carta principal e pode também ser apresentado na carta mini utilizando o atributo *rotular_carta_mini*
+elemnat_toponimo_fisiografico_natural_l | Rótulo é apresentado no carta principal e pode também ser apresentado na carta mini utilizando o atributo *rotular_carta_mini*
+elemnat_ilha_p | Rótulo é apresentado no carta principal e pode também ser apresentado na carta mini utilizando o atributo *rotular_carta_mini*
+elemnat_ilha_a | Rótulo é apresentado no carta principal e pode também ser apresentado na carta mini utilizando o atributo *rotular_carta_mini*
+elemnat_ponto_cotado_p | Não é apresentada na mini carta. A atributo *cota_mais_alta* indica qual é o ponto cotado mais alto do produto, que é apresentado com um rótulo maior
+infra_elemento_energia_p | Não é apresentada na mini carta
+infra_elemento_energia_a | Não é apresentada na mini carta
+infra_elemento_infraestrutura_p | Não é apresentada na mini carta
+infra_pista_pouso_p | Não é apresentada na mini carta
+infra_pista_pouso_l | Não é apresentada na mini carta
+infra_pista_pouso_a | Não é apresentada na mini carta
+llp_aglomerado_rural_p | Rótulo é apresentado no carta principal e pode também ser apresentado na carta mini utilizando o atributo *rotular_carta_mini*
+llp_nome_local_p | Não é apresentada na mini carta
+edicao_simb_cota_mestra_l | Utilizado para posicionar manualmente os textos de cota mestra da curva de nível caso necessário
+elemnat_curva_nivel_l | Não é apresentada na mini carta
+elemnat_trecho_drenagem_l | Rótulo é apresentado no carta principal e pode também ser apresentado na carta mini utilizando o atributo *rotular_carta_mini*. Simbologia é apresentada na carta principal e pode também ser apresentado na carta mini utilizando o atributo *simbolizar_carta_mini*.
+infra_via_deslocamento_l | Simbologia é apresentada na carta principal e pode também ser apresentado na carta mini utilizando o atributo *simbolizar_carta_mini*.
+infra_elemento_energia_l | Não é apresentada na mini carta
+infra_ferrovia_l | Simbologia é apresentada na carta principal e pode também ser apresentado na carta mini utilizando o atributo *simbolizar_carta_mini*.
+elemnat_terreno_sujeito_inundacao_a | Não é apresentada na mini carta
+aux_area_sem_dados_a | Rótulo é apresentado no carta principal e pode também ser apresentado na carta mini utilizando o atributo *rotular_carta_mini*
+cobter_massa_dagua_a | Rótulo é apresentado no carta principal e pode também ser apresentado na carta mini utilizando o atributo *rotular_carta_mini*
+edicao_area_pub_militar_l | O atributo *sobreposto* é utilizado quando o limite coincide com outro elemento da carta. A simbologia não é tracejada na carta mini. O atributo "exibir_rotulo_aproximado* é utilizado para definir exibir o rótulo *APROXIMADO* na carta principal quando a feição tiver geometria_aproximada = "sim"
+edicao_terra_indigena_l | O atributo *sobreposto* é utilizado quando o limite coincide com outro elemento da carta. A simbologia não é tracejada na carta mini. O atributo "exibir_rotulo_aproximado* é utilizado para definir exibir o rótulo *APROXIMADO* na carta principal quando a feição tiver geometria_aproximada = "sim"
+llp_unidade_conservacao_l | O atributo *sobreposto* é utilizado quando o limite coincide com outro elemento da carta. A simbologia não é tracejada na carta mini. O atributo "exibir_rotulo_aproximado* é utilizado para definir exibir o rótulo *APROXIMADO* na carta principal quando a feição tiver geometria_aproximada = "sim"
+edicao_limite_legal_l | O atributo *sobreposto* é utilizado quando o limite coincide com outro elemento da carta. A simbologia não é tracejada na carta mini. O atributo "exibir_rotulo_aproximado* é utilizado para definir exibir o rótulo *APROXIMADO* na carta principal quando a feição tiver geometria_aproximada = "sim"
+llp_area_pub_militar_a | Rótulo é apresentado no carta principal e pode também ser apresentado na carta mini utilizando o atributo *rotular_carta_mini*
+llp_terra_indigena_a | Rótulo é apresentado no carta principal e pode também ser apresentado na carta mini utilizando o atributo *rotular_carta_mini*
+llp_unidade_conservacao_a | Rótulo é apresentado no carta principal e pode também ser apresentado na carta mini utilizando o atributo *rotular_carta_mini*
+
 
 # Definição de Estilos
 Durante o processo de edição podem ser utilizadas siglas e abreviaturas seguindo o padrão apresentado [aqui](./anexo_e.md).  
